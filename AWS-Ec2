@@ -1,0 +1,24 @@
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "6.66.0"
+    }
+  }
+}
+
+# provider "aws" {
+#   region = "ap-south-1"
+# }
+
+# resource "aws_instance" "app-instance-1" {
+#   ami = "ami-01a00762f46d584a1"
+#   instance_type = "t2.micro"
+#   availability_zone = "ap-south-1a"
+#   tags = {
+#     Name = "instance-1"
+#     # Environment = "Development"
+#     # market = "India"
+#   }
+# }
+
