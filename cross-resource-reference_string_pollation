@@ -1,0 +1,21 @@
+# provider "aws" {
+#   region = "ap-south-1"
+# }
+
+# resource "aws_eip" "elastic_ip" {
+#   domain = "vpc"
+# }
+
+# resource "aws_security_group" "cross_resource_sg" {
+#   name        = "SG_Group_EIP"
+#   description = "EIP attached to input rule of this SG_Group"
+   
+# }
+
+# resource "aws_vpc_security_group_ingress_rule" "https_inbound_traffic" {
+#   security_group_id = aws_security_group.cross_resource_sg.id
+#   from_port = 443
+#   to_port = 443
+#   ip_protocol = "tcp"
+#   cidr_ipv4 = "${aws_eip.elastic_ip.public_ip}/32"
+# }
